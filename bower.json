@@ -1,0 +1,24 @@
+{
+  "name": "rrandom",
+  "description": "Display a random word, using react.js",
+  "main": "",
+  "authors": [
+    "Peter Orum"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "es6"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap-sass": "~3.3.6"
+  }
+}
