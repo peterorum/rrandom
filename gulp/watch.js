@@ -10,7 +10,7 @@ function isOnlyChange(event) {
   return event.type === 'changed';
 }
 
-gulp.task('watch', [], function () {
+gulp.task('watch', ['scripts:watch'], function () {
 
   gulp.watch([
     path.join(conf.paths.src, '/**/*.css'),
