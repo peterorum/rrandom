@@ -13,7 +13,7 @@ var wiredep = require('wiredep').stream;
 gulp.task('styles', function () {
 
   return gulp.src([
-    path.join(conf.paths.src, '/app/index.scss')
+    path.join(conf.paths.src, "/app/index.scss")
   ])
     .pipe($.sourcemaps.init())
     .pipe($.sass()).on('error', conf.errorHandler('SASS'))

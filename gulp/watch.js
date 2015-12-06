@@ -14,7 +14,7 @@ gulp.task('watch', ['scripts:watch'], function () {
 
   gulp.watch([
     path.join(conf.paths.src, '/**/*.css'),
-    path.join(conf.paths.src, '/**/*.less')
+    path.join(conf.paths.src, '/**/*.scss')
   ], function(event) {
     if(isOnlyChange(event)) {
       gulp.start('styles');
