@@ -1,10 +1,15 @@
 import React from 'react';
+import Words from './Words';
+
+function getWord() {
+  return Words[Math.floor(Math.random() * Words.length)];
+}
 
 var Word = React.createClass({
 
-  getInitialState : function() {
+  getInitialState: function() {
     return {
-      word: 'fish'
+      word: getWord()
     };
   },
   render: function() {
