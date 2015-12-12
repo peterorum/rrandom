@@ -10,7 +10,7 @@ function isOnlyChange(event) {
   return event.type === 'changed';
 }
 
-gulp.task('watch', ['scripts:watch'], function () {
+gulp.task('watch', ['scripts:watch', 'html:watch'], function () {
 
   gulp.watch([
     path.join(conf.paths.src, '/**/*.css'),
@@ -23,8 +23,7 @@ gulp.task('watch', ['scripts:watch'], function () {
     }
   });
 
-
-  gulp.watch(path.join(conf.paths.src, '/**/*.html'), function(event) {
+  gulp.watch(path.join(conf.paths.src, '/**/*.html'), ['html'], function(event) {
     browserSync.reload(event.path);
   });
 });
