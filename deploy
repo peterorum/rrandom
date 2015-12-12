@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd ~/Projects/rrandom
+pwd
+gulp clean
+gulp build
+
+rsync -crv dist/* sna:/home/ec2-user/rrandom/
