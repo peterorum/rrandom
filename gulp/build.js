@@ -9,7 +9,7 @@ var $ = require('gulp-load-plugins')({
 });
 
 
-gulp.task('build', [], function () {
+gulp.task('build', ['html', 'scripts', 'styles'], function () {
 
   // var htmlFilter = $.filter('*.html', { restore: true });
   // var jsFilter = $.filter('**/*.js', { restore: true });
@@ -18,7 +18,9 @@ gulp.task('build', [], function () {
   return gulp.src([
     path.join(conf.paths.tmp, '/serve/index.html'),
     path.join(conf.paths.tmp, '/serve/**/*.css'),
-    path.join(conf.paths.tmp, '/serve/**/*.')
+    path.join(conf.paths.tmp, '/serve/**/*.js'),
+    path.join(conf.paths.src, '/assets/**/*.*'),
+    path.join(conf.paths.server, '/server.js')
     ])
     .pipe($.debug({title: 'all'}))
     .pipe(gulp.dest(path.join(conf.paths.dist, '/')));

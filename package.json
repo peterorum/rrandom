@@ -17,6 +17,7 @@
     "del": "~2.0.1",
     "eslint-loader": "~1.0.0",
     "eslint-plugin-react": "^3.11.3",
+    "express": "^4.13.3",
     "gulp": "~3.9.0",
     "gulp-autoprefixer": "~3.0.1",
     "gulp-debug": "^2.1.2",
