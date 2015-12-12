@@ -12,10 +12,20 @@ var Word = React.createClass({
       word: getWord()
     };
   },
+  getAnother: function() {
+    this.setState({
+      word: getWord()
+    });
+  },
   render: function() {
     return (
-    <div className='rr-word'>
-      {this.state.word}
+    <div>
+      <div className='rr-word'>
+        {this.state.word}
+      </div>
+      <div className='rr-button'>
+        <button className='btn btn-primary btn-lg' onClick={this.getAnother}>another</button>
+      </div>
     </div>
     );
   }
