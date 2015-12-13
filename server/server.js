@@ -10,7 +10,8 @@
 
   var http = require('http');
   var url = require('url');
-  var queryString = require('querystring');
+  // var queryString = require('querystring');
+  var fs = require('fs');
   var path = require('path');
 
   //--------- serve a file
@@ -18,15 +19,25 @@
   var sendFile = function(res, filename) {
     var filepath = path.join(process.cwd(), filename);
 
-    res.sendFile(filepath, function(err) {
-      if (err) {
-        console.log(err);
-        res.status(err.status).end();
-      }
-      else {
-        // console.log('Sent:', filename);
-      }
-    });
+    if (fs.existsSync(filepath)) {
+
+      res.sendFile(filepath, function(err) {
+        if (err) {
+          console.log(err);
+          res.status(err.status).end();
+        }
+        else {
+          // console.log('Sent:', filename);
+        }
+      });
+    }
+    else {
+      console.log('404', filepath);
+
+      res.status(404)
+         .send('Not found')
+         .end();
+    }
   };
 
   // --- start express

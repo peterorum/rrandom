@@ -20,7 +20,7 @@ gulp.task('build', ['html', 'scripts', 'styles'], function () {
     path.join(conf.paths.tmp, '/serve/**/*.css'),
     path.join(conf.paths.tmp, '/serve/**/*.js'),
     path.join(conf.paths.src, '/assets/**/*.*'),
-    path.join(conf.paths.server, '/server.js')
+    path.join(conf.paths.server, '/serve*')
     ])
     .pipe($.debug({title: 'all'}))
     .pipe(gulp.dest(path.join(conf.paths.dist, '/')));

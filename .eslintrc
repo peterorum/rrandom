@@ -11,7 +11,8 @@
   "globals": {
   },
   "env": {
-      "browser": true,
+      "node": true,
+      "browser": true
   },
   "rules": {
     "react/jsx-quotes": 0,
