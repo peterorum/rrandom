@@ -15,4 +15,9 @@ Run
 ---
 gulp serve
 
+Tests
+---
+npm install -g jest
+config goes in package.json
+jest --watch
 

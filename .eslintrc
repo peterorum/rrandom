@@ -9,13 +9,17 @@
               "jasmine": true
   },
   "globals": {
+  "jest": false,
+  "React": true
   },
   "env": {
       "node": true,
+      "jasmine": true,
       "browser": true
   },
   "rules": {
     "react/jsx-quotes": 0,
-    "jsx-quotes": [2, "prefer-single"]
+    "jsx-quotes": [1, "prefer-single"],
+    "no-unused-vars": [1, {"varsIgnorePattern": "React"}]
   }
 }

@@ -1,4 +1,5 @@
 var React = require('react');
+
 var ReactDOM = require('react-dom');
 
 var RandomApp  = require('./components/random-app/random-app');
