@@ -1,8 +1,8 @@
-import React from 'react';
+var React = require('react');
 
-import Title from '../title/title';
-import Word from '../word/word';
-import RandomStore from '../../stores/random-store';
+var Title = require('../title/title');
+var Word = require('../word/word');
+var RandomStore = require('../../stores/random-store');
 
 
 // retrieve the current data from the store
@@ -48,4 +48,5 @@ var ReactApp = React.createClass({
     }
 });
 
-export default ReactApp;
+module.exports = ReactApp;
+

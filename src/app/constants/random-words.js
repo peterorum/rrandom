@@ -5928,4 +5928,4 @@ var Words = [
 "zoom"
 ];
 
-export default Words;
+module.exports = Words;

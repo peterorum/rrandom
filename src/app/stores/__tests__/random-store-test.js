@@ -1,6 +1,6 @@
 jest.dontMock('../../constants/random-constants');
+jest.dontMock('../../constants/random-words');
 jest.dontMock('../random-store');
-jest.dontMock('object-assign');
 
 describe('RandomStore', function() {
 
@@ -26,7 +26,7 @@ describe('RandomStore', function() {
 
   it('should initialize with a word', function() {
     var word = RandomStore.getWord();
-    expect(word.length > 0).toTruthy();
+    expect(word.length > 0).toBeTruthy();
   });
 
   it('changes word', function() {
@@ -36,19 +36,8 @@ describe('RandomStore', function() {
 
     var word2 = RandomStore.getWord();
 
+    // some small chance of failing
     expect(word1 === word2).toBeFalsy();
   });
 
 });
-
-
-// import AppDispatcher from '../../dispatcher/random-dispatcher';
-
-// describe('RandomStore', function() {
-
-//   it('should fail', function(){
-//     let x = () => 2;
-
-//     expect(x()).toBe(2);
-//   });
-// });

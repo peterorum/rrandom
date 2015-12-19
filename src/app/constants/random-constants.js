@@ -1,4 +1,4 @@
-import keyMirror from 'keymirror';
+var keyMirror = require('keymirror');
 
 // creates object with values = keys
 

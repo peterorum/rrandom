@@ -1,4 +1,4 @@
-import React from 'react';
+var React = require('react');
 
 var Title = React.createClass({
   render: function() {
@@ -10,4 +10,4 @@ var Title = React.createClass({
   }
 });
 
-export default Title;
+module.exports = Title;

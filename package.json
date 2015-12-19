@@ -56,7 +56,8 @@
     "rootDir": "./",
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
     "testRunner": "<rootDir>/node_modules/jest-cli/src/testRunners/jasmine/jasmine2",
-    "testFileExtensions": ["es6", "js"],
-    "moduleFileExtensions": ["js", "json", "es6"]
+    "testFileExtensions": ["js"],
+    "moduleFileExtensions": ["js"],
+    "unmockedModulePathPatterns": ["<rootDir>/node_modules"]
   }
 }

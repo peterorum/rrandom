@@ -1,8 +1,8 @@
-import AppDispatcher from '../dispatcher/random-dispatcher';
-import EventEmitter from 'events';
-import RandomConstants from '../constants/random-constants';
-import assign from 'object-assign';
-import Words from '../constants/random-words';
+var AppDispatcher = require('../dispatcher/random-dispatcher');
+var EventEmitter = require('events');
+var RandomConstants = require('../constants/random-constants');
+var assign = require('object-assign');
+var Words = require('../constants/random-words');
 
 var _word = '';
 

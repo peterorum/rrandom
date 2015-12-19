@@ -1,5 +1,5 @@
-import React from 'react';
-import RandomActions from '../../actions/random-actions';
+var React = require('react');
+var RandomActions = require('../../actions/random-actions');
 
 var ReactPropTypes = React.PropTypes;
 
@@ -23,4 +23,4 @@ var Word = React.createClass({
   }
 });
 
-export default Word;
+module.exports = Word;

@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+var React = require('react');
+var ReactDOM = require('react-dom');
 
-import RandomApp from  './components/random-app/random-app';
+var RandomApp  = require('./components/random-app/random-app');
 
 ReactDOM.render(
   <RandomApp />,
