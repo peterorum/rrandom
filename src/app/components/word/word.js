@@ -1,5 +1,5 @@
 import React from 'react';
-import RandomActions from '../actions/random-actions';
+import RandomActions from '../../actions/random-actions';
 
 var ReactPropTypes = React.PropTypes;
 

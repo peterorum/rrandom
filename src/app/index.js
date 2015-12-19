@@ -1,3 +1,4 @@
+import React from 'react';
 import ReactDOM from 'react-dom';
 
 import RandomApp from  './components/random-app/random-app';

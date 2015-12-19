@@ -40,7 +40,7 @@ var ReactApp = React.createClass({
         </div>
         <div className='row'>
           <div className='col-xs-12 text-center'>
-            <Word word='this.state.word' />
+            <Word word={this.state.word} />
           </div>
         </div>
       </div>
