@@ -5,4 +5,4 @@ pwd
 gulp clean
 gulp build
 
-rsync -crv dist/* sna:/home/ec2-user/rrandom/
+rsync -crv dist/* functal:/home/ec2-user/rrandom/
